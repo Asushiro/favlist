@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Favlist</title>
+    <!-- 导入css -->
+    <link rel="icon" href="/favlist.png">
+    <link rel="stylesheet" href="/style.css"/>
+    <!--waline评论系统css-->
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
+  <meta name="generator" content="Hexo 7.0.0"></head>
+  <body>
+
+  <div id="page-container">
+    <span class="pai">
+    <a class="kong" href="/"> 主页 </a>
+    <a class="kong" href="/categories"> 分类 </a>
+    <a class="kong" href="/tags"> 标签 </a>
+</span>
+
+    <div id="content-wrap">
+        <div class="container">
+          <!-- 点击文章 -->
+<div>
+  <h1>测试一</h1>
+  <wenzhang>
+      <div class="contents">
+        
+      </div>
+      <p>标题：这是标题<br>番号：这是番号<br>评价：这是评价<br>链接：这是链接<br>预览：<br><img src="https://s3.bmp.ovh/imgs/2023/12/08/55a433b54a08f768.png" width="600px" height="400px"></p>
+
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTk3NS8yMjQ4Ng==">
+  <!-- 评论系统 -->
+  <div id="article-info">
+    <!-- ... -->
+    阅读量: <span class="waline-pageview-count" data-path="<Your/Path/Name>" />
+    <!-- ... -->
+  </div>
+
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.akapen.top',
+      reaction: true, //对文章反应的反应，禁用填false
+      pageview: true, // 浏览量统计
+      comment: true, // 评论数统计
+    });
+  </script>
+
+<!--原始评论系统
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+  
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+  -->
+
+
+  </wenzhang>
+
+
+
+
+
+
+        </div>
+    </div>
+    
+<footer id="footer" >
+    <span class="konga">
+        <a class="jiao"  href="."><</a>
+            <input type="text" id="text_input"  placeholder="搜索" >
+            
+        <a class="jiao"  href=".">></a>
+    </span>
+    <span class="konga2">
+    <div id="text_output"  text_="center";></div>
+    </div>
+</span>
+
+</footer>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<bokebangquan>
+<!-- 博客版权 -->
+</bokebangqua>
+
+
+  </div>
+  
+<script src="/jquery.min.js"></script>
+
+  
+<script src="/main.js"></script>
+
+  </body>
+</html>
